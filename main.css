@@ -32,7 +32,7 @@ main{
 
 .logo{
     background-color: hsl(228, 56%, 26%);
-    padding: 2em 6em 2em 2em;
+    padding: 3em 7em 3em 3em;
     border-radius: 6px;
     border-top-right-radius: 100px;
 }
@@ -56,7 +56,7 @@ main{
 /* storage*/
 .storage{
     background-color: hsl(228, 56%, 26%);
-    padding: 2rem 2rem 3rem 2rem;
+    padding: 3rem ;
     position: relative;
     border-radius: 6px;
     height: fit-content;
