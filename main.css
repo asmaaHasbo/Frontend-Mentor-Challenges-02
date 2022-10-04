@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+ body{
+    background-color: hsl(229, 57%, 11%);
+}  
+
+img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+main{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: grid;
+    align-items: flex-end;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    
+}
+
+/*logo*/
+
+.logo{
+    background-color: hsl(228, 56%, 26%);
+    padding: 2em 6em 2em 2em;
+    border-radius: 6px;
+    border-top-right-radius: 100px;
+}
+.icons  {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.icons div{
+    background-color: hsl(229, 57%, 11%);
+    width: 2.5rem;
+    height: 2.5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 6px;
+}
+
+/* storage*/
+.storage{
+    background-color: hsl(228, 56%, 26%);
+    padding: 2rem 2rem 3rem 2rem;
+    position: relative;
+    border-radius: 6px;
+    height: fit-content;
+}
+.storage div{
+    background-color: white;
+    width: fit-content;
+    padding: 10px;
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    border-radius: 6px;
+}
+
+.storage div p{
+    font-size: 14px;
+    color: hsl(229, 7%, 55%) ;
+    font-weight: bold; 
+}
+
+.storage div span{
+    font-size: 2rem;
+    color: hsl(229, 57%, 11%);
+    font-weight: bold; 
+}
+
+.storage p {
+    font-size: 14px;
+    color: hsl(229, 7%, 55%) ;
+    padding-bottom: 10px;
+}
+
+.storage span , input::after , input::before{
+    font-weight: bold;
+    color:   hsl(243, 100%, 93%);
+    font-size: 12px;
+}
+input{
+    position: relative;
+    width: 25rem;
+    background:linear-gradient(to right , hsl(6, 100%, 80%) to hsl(335, 100%, 65%));
+}
+
+
+
+input::before{
+    content: "0 GB";
+    position: absolute;
+    left: 0px;
+    bottom: -1.3rem;
+}
+
+input::after{
+    content: "1000 GB";
+    position: absolute;
+    right: 0px;
+    bottom: -1.3rem;
+}
+
+
+/*mobile */
+
+
+@media (max-width:375px) {
+    main{
+        grid-template-columns: auto;
+    }   
+
+    input{
+        width: 16rem;
+    }
+
+    .storage div {
+        top: 85px;
+        right: 103px
+    }
+}
